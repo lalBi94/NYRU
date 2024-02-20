@@ -30,6 +30,10 @@ body {
 
     .title-ft {
         font-family: "StussyScript-Regular";
+        
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     .text-ft {
