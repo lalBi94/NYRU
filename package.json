@@ -1,9 +1,30 @@
 {
   "name": "nyru",
+  "description": "Website showing my artistic work in vfx, sfx, gfx ...",
+  "keywords": [
+    "vfx",
+    "gfx",
+    "sfx",
+    "title-card",
+    "visuals",
+    "arts",
+    "art",
+    "artist",
+    "nyru",
+    "video",
+    "montage",
+    "visuels",
+    "visuel",
+    "cartes-de-titre",
+    "artiste"
+  ],
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
-  
+  "contributors": [
+    "General Zod (lalBi94)",
+    "Nyru"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
