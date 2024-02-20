@@ -1,0 +1,43 @@
+$blackground: rgb(15, 15, 15);
+$whiteground: rgb(247, 247, 247);
+$white: rgb(241, 241, 241);
+$black: rgb(17, 17, 17);
+$resp_limiter: 736px;
+
+*::selection {
+    background: $whiteground;
+    color: $black;
+}
+
+@font-face {
+  font-family: "StussyScript-Regular";
+  src: url("./fonts/StussyScript-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LowerResolution";
+  src: url("./fonts/LowerResolution.ttf") format("truetype");
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: $black;
+    color: $white;
+
+    .title-ft {
+        font-family: "StussyScript-Regular";
+    }
+
+    .text-ft {
+        font-family: "LowerResolution";
+    }
+
+    #root {
+        width: 100%;
+        height: 100%;
+    }
+}
