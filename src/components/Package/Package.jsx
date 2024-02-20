@@ -20,7 +20,7 @@ export default function Package({ name, data, isUniqueText = false }) {
             {isUniqueText ? (
                 <div id="unique-text-container">
                     {
-                        <span id="text-ft unique-text">
+                        <span id="unique-text">
                             {ZServices.isFrench(lang)
                                 ? data.text.fr
                                 : data.text.en}
@@ -64,7 +64,7 @@ export default function Package({ name, data, isUniqueText = false }) {
                                                     : data[i].desc_en
                                             ).map((j, k2) => (
                                                 <span
-                                                    className="text-ft package-content-list-desc-points"
+                                                    className="package-content-list-desc-points"
                                                     key={k2}
                                                 >
                                                     -{" "}

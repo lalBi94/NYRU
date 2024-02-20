@@ -29,6 +29,7 @@ $border_color: rgb(0, 0, 0);
         }
 
         #unique-text {
+            font-family: 'Courier New', Courier, sans-serif;
             color: $white;
         }
     }
@@ -98,6 +99,7 @@ $border_color: rgb(0, 0, 0);
                     gap: 6px;
 
                     .package-content-list-desc-points {
+                        font-family: 'Courier New', Courier, sans-serif;
                         font-size: 15px;
 
                         @media (max-width: $resp_limiter) {
