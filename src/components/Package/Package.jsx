@@ -1,6 +1,7 @@
 import YTBFrame from "../YTBFrame/YTBFrame";
 import ZServices from "../../services/services";
 import "./Package.scss";
+import config from "./data/data.json"
 import { useEffect, useState } from "react";
 
 export default function Package({ name, data, isUniqueText = false }) {
@@ -42,7 +43,7 @@ export default function Package({ name, data, isUniqueText = false }) {
                                 ) : (
                                     <div className="package-content-list-video-container">
                                         <YTBFrame
-                                            link={`https://cdpn.io/pen/debug/oNPzxKo?v=${data[i].url}`}
+                                            link={`${config["ytb-bypass"]}${data[i].url}`}
                                         />
                                     </div>
                                 )}

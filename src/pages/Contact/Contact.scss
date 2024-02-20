@@ -1,26 +1,48 @@
 #contact-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     height: 100%;
 
     #page-title {
+        font-size: 2em;
         text-align: center;
     }
 
     #links-container {
         width: 100%;
-        height: 60%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        gap: 20px;
         align-items: center;
     
         .links {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
             width: 50%;
-            height: 90px;
-            background: red;
+            flex-wrap: wrap;
+            gap: 5px;
+
+            .links-txt-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+
+                .links-txt {
+                    text-align: center;
+                }    
+            }
+
+            .links-img {
+                display: flex;
+                text-align: center;
+            }
         }
     }
 }
