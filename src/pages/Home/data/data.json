@@ -1,5 +1,5 @@
 {
-    "ptitle": "🏡 - NYRU",
+    "ptitle": {"fr": "Accueil", "en": "Home"},
     "htitle": "NYRU",
     "trad_vfx": {"en": "VFX", "fr": "VFX"},
     "trad_sfx": {"en": "SFX", "fr": "SFX"},

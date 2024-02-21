@@ -1,7 +1,22 @@
 import "./Contact.scss";
 import Footer from "../../components/Footer/Footer"
+import { useEffect } from "react";
+import data from "./data/data.json"
+import ZServices from "../../services/services";
 
 export default function Contact() {
+    useEffect(() => {
+        const lang = localStorage.getItem(ZServices.LANG.stocker_name);
+        if(!lang) {
+            localStorage.setItem(ZServices.LANG.stocker_name, ZServices.LANG.fr)
+            lang = ZServices.LANG.fr
+        }
+
+        ZServices.changeTitle(
+            ZServices.isFrench(lang) ? data.title.fr : data.title.en
+        );
+    }, []);
+
     return (
         <div id="contact-container">
             <span id="page-title" className="title-ft">

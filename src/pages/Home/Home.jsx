@@ -1,16 +1,13 @@
 import "./Home.scss";
 import Button from "../../components/Button/Button";
 import { useEffect, useState } from "react";
-import Layout from "../../layout/Layout";
 import ZServices from "../../services/services";
 import datas from "./data/data.json";
-import paths from "../../services/data/paths.json";
 
 export default function Home() {
     const [lang, setLang] = useState(ZServices.LANG.en);
 
     useEffect(() => {
-        ZServices.changeTitle(datas.ptitle)
         const language = localStorage.getItem(ZServices.LANG.stocker_name);
 
         if (!language) {
@@ -22,6 +19,10 @@ export default function Home() {
         } else {
             setLang(language);
         }
+
+        ZServices.changeTitle(
+            ZServices.isFrench(language) ? datas.ptitle.fr : datas.ptitle.en
+        );
     }, []);
 
     return (
