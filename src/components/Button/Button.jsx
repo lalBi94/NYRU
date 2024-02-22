@@ -1,7 +1,14 @@
 import "./Button.scss";
 import "hover.css";
 
-export default function Button({ text, logo, handle, fc, bg, persostyle=null }) {
+export default function Button({
+    text,
+    logo,
+    handle,
+    fc,
+    bg,
+    persostyle = null,
+}) {
     return (
         <button
             persostyle={persostyle}

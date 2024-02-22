@@ -5,12 +5,12 @@ import { useEffect, useState } from "react";
 import ZServices from "../../services/services";
 
 export default function Footer() {
-    const [lang, setLang] = useState(ZServices.LANG.fr)
-    
+    const [lang, setLang] = useState(ZServices.LANG.fr);
+
     useEffect(() => {
         const language = localStorage.getItem(ZServices.LANG.stocker_name);
-        setLang(language || ZServices.LANG.fr)
-    }, [])
+        setLang(language || ZServices.LANG.fr);
+    }, []);
 
     return (
         <footer id="footer-container">

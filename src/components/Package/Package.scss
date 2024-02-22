@@ -43,11 +43,21 @@ $border_color: rgb(0, 0, 0);
         gap: 20px;
         padding: 10px;
 
+        @media (max-width: $resp_limiter) {
+            width: 95%;
+        }
+
         .package-content-list {
             display: flex;
             flex-direction: row;
             width: 100%;
             gap: 4px;
+
+            @media (max-width: $resp_limiter) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
             .package-content-list-video-container {
                 width: 50%;
@@ -82,6 +92,10 @@ $border_color: rgb(0, 0, 0);
 
                 .package-content-list-desc-name-container {
                     width: 100%;
+                    
+                    @media (max-width: $resp_limiter) {
+                        text-align: center;
+                    }
 
                     .package-content-list-desc-name {
                         font-size: 24px;
@@ -110,10 +124,4 @@ $border_color: rgb(0, 0, 0);
             }
         }
     }
-
-    @media (max-width: $resp_limiter) {
-        #package-content-list-container {
-            width: 95%;
-        }
-    } 
 }
