@@ -79,9 +79,7 @@ $border_color: rgb(0, 0, 0);
                 }
                 
                 .ytb-frame {
-                    width: 70%;
                     height: auto;
-                    min-width: 150px;
                     max-height: 150px;
                     border-radius: 3px;
                     -webkit-box-shadow: 0px 0px 10px 0px $border_color; 
@@ -90,7 +88,6 @@ $border_color: rgb(0, 0, 0);
                     background: $black;
 
                     @media (max-width: $resp_limiter) {
-                        width: 100%;
                     }
                 }
             }
