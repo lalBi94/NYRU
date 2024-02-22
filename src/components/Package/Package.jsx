@@ -50,7 +50,7 @@ export default function Package({ name, data, isUniqueText = false }) {
 
                                 <div className="package-content-list-desc-container">
                                     <div className="package-content-list-desc-name-container">
-                                        <span className="text-ft package-content-list-desc-name">
+                                        <span className="title-sp package-content-list-desc-name">
                                             {ZServices.isFrench(lang)
                                                 ? data[i].name_fr
                                                 : data[i].name_en}

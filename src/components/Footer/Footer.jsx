@@ -38,19 +38,19 @@ export default function Footer() {
             <div id="footer-bottom-section-container">
                 <span
                     onClick={() => {
-                        ZServices.goTo("/NYRU/#/sfx");
-                    }}
-                    className="text-ft footer-bottom-section-link"
-                >
-                    SFX
-                </span>
-                <span
-                    onClick={() => {
                         ZServices.goTo("/NYRU/#/vfx");
                     }}
                     className="text-ft footer-bottom-section-link"
                 >
                     VFX
+                </span>
+                <span
+                    onClick={() => {
+                        ZServices.goTo("/NYRU/#/sfx");
+                    }}
+                    className="text-ft footer-bottom-section-link"
+                >
+                    SFX
                 </span>
                 <span
                     onClick={() => {

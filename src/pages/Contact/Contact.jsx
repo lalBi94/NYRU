@@ -28,7 +28,9 @@ export default function Contact() {
 
             <div id="links-container">
                 <div className="links">
-                    <div className="links-img-container">
+                    <div className="links-img-container" onClick={() => {
+                        ZServices.goTo("https://www.instagram.com/nyruvizion?igsh=Y2x4eTFrOXo2YjV2")
+                    }}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="100"
@@ -47,7 +49,9 @@ export default function Contact() {
                 </div>
 
                 <div className="links">
-                    <div className="links-img-container">
+                    <div className="links-img-container" onClick={() => {
+                        ZServices.goTo("https://x.com/visionnyru?t=oJiTpCrmPxEu4h0ImisIrg&s=09")
+                    }}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="100"
@@ -66,7 +70,9 @@ export default function Contact() {
                 </div>
 
                 <div className="links">
-                    <div className="links-img-container">
+                    <div className="links-img-container" onClick={() => {
+                        ZServices.goTo("mailto:nyruvizion@gmail.com")
+                    }}>
                         <svg
                             style={{ filter: "invert(100%)" }}
                             xmlns="http://www.w3.org/2000/svg"

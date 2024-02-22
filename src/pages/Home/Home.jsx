@@ -3,6 +3,7 @@ import Button from "../../components/Button/Button";
 import { useEffect, useState } from "react";
 import ZServices from "../../services/services";
 import datas from "./data/data.json";
+import logo from "../../assets/logo_home.png"
 
 export default function Home() {
     const [lang, setLang] = useState(ZServices.LANG.en);
@@ -27,7 +28,9 @@ export default function Home() {
 
     return (
         <div id="home-container">
-            <span id="home-title" className="title-ft">{datas.htitle}</span>
+            <span id="home-title" className="title-ft">
+                <img className="home-title-img" src={logo} alt="Logo" />
+            </span>
 
             <div id="home-content-container">
                 <div className="home-content">

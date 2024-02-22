@@ -35,9 +35,8 @@
         .links {
             display: flex;
             flex-direction: row;
-            gap: 5px;
             width: 40%;
-            justify-content: space-around;
+            justify-content: space-between;
 
             @media (max-width: $resp_limiter) {
                 align-items: center;
@@ -49,9 +48,15 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                width: 60%;
+
+                @media (max-width: $resp_limiter) { 
+                    margin-top: 10px;
+                    justify-content: center;
+                }
 
                 .links-txt {
-                    text-align: right;
+                    text-align: center;
                 }
             }
 
@@ -64,6 +69,12 @@
                     height: 70px;
                     display: flex;
                     text-align: center;
+                    transition: 0.2s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        cursor: pointer;
+                    }
     
                     @media (max-width: $resp_limiter) {
                         width: 40px;

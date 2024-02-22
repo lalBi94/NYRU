@@ -107,11 +107,11 @@ $border_color: rgb(0, 0, 0);
                     }
 
                     .package-content-list-desc-name {
-                        font-size: 24px;
+                        font-size: 20px;
                         letter-spacing: 1.2px;
 
                         @media (max-width: $resp_limiter) {
-                            font-size: 20px;
+                            font-size: 18px;
                         }
                     }
                 }

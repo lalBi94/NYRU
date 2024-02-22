@@ -10,13 +10,23 @@ $resp_limiter: 920px;
 }
 
 @font-face {
-  font-family: "StussyScript-Regular";
-  src: url("./fonts/StussyScript-Regular.ttf") format("truetype");
+    font-family: "StussyScript-Regular";
+    src: url("./fonts/StussyScript-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "LowerResolution";
-  src: url("./fonts/LowerResolution.ttf") format("truetype");
+    font-family: "LowerResolution";
+    src: url("./fonts/LowerResolution.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Nexa-ExtraLight";
+    src: url("./fonts/Nexa-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Nexa-Heavy";
+    src: url("./fonts/Nexa-Heavy.ttf") format("truetype");
 }
 
 html,
@@ -30,7 +40,7 @@ body {
 
     .title-ft {
         font-family: "StussyScript-Regular";
-        
+
         &:hover {
             cursor: pointer;
         }
@@ -41,7 +51,23 @@ body {
     }
 
     .text-bs {
-        font-family: 'Courier New', Courier, sans-serif;
+        font-family: "Courier New", Courier, sans-serif;
+    }
+
+    .title-sp {
+        font-family: "Nexa-Heavy";
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .text-sp {
+        font-family: "Nexa-ExtraLight";
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     #root {
