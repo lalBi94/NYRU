@@ -74,8 +74,12 @@ $border_color: rgb(0, 0, 0);
                 justify-content: center;
 
                 img {
-                    width: 70%;
+                    width: 250px;
                     background: $black;
+
+                    @media (max-width: $resp_limiter) {
+                        width: 225px;
+                    }
                 }
                 
                 .ytb-frame {
