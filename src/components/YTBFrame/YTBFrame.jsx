@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./YTBFrame.scss";
 
+/**
+ * Component showing a frame contains youtube video.
+ * @param {object} props Component with properties.
+ * @param {string} props.link Link of the bypassed youtube embed
+ * @return {React.Element}
+ */
 export default function YTBFrame({ link }) {
     return (
         <iframe

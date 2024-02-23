@@ -1,5 +1,4 @@
 {
-    "focus_package": "/NYRU/#/package?type",
-    "all_package": "/NYRU/#/package",
-    "home": "/NYRU/#/home"
+    "home": "/NYRU/#/home",
+    "generic_base": "/NYRU/#/"
 }

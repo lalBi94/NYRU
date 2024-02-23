@@ -4,6 +4,14 @@ import "./Package.scss";
 import config from "./data/data.json"
 import { useEffect, useState } from "react";
 
+/**
+ * Used to showing content of page (video, image or text) on Package/ folder.
+ * @param {object} props Components with properties.
+ * @param {string} props.name Name of the page.
+ * @param {object} props.data Data showing in page.
+ * @param {boolean} props.isUniqueText If data contains only text props.data.
+ * @return {React.Element}
+ */
 export default function Package({ name, data, isUniqueText = false }) {
     const [lang, setLang] = useState(ZServices.LANG.fr);
 

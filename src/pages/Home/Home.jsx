@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import ZServices from "../../services/services";
 import datas from "./data/data.json";
 import logo from "../../assets/logo_home.png"
+import paths from "../../services/data/paths.json"
 
 export default function Home() {
     const [lang, setLang] = useState(ZServices.LANG.en);
@@ -37,7 +38,7 @@ export default function Home() {
                     <Button
                         handle={() => {
                             ZServices.goTo(
-                                `/NYRU/#/${datas.vfx_target}`
+                                `${paths.generic_base}${datas.vfx_target}`
                             );
                         }}
                         text={
@@ -49,7 +50,7 @@ export default function Home() {
                     <Button
                         handle={() => {
                             ZServices.goTo(
-                                `/NYRU/#/${datas.sfx_target}`
+                                `${paths.generic_base}${datas.sfx_target}`
                             );
                         }}
                         text={
@@ -61,7 +62,7 @@ export default function Home() {
                     <Button
                         handle={() => {
                             ZServices.goTo(
-                                `/NYRU/#/${datas.gfx_target}`
+                                `${paths.generic_base}${datas.gfx_target}`
                             );
                         }}
                         text={
@@ -76,7 +77,7 @@ export default function Home() {
                     <Button
                         handle={() => {
                             ZServices.goTo(
-                                `/NYRU/#/${datas.vis_target}`
+                                `${paths.generic_base}${datas.vis_target}`
                             );
                         }}
                         text={
@@ -88,7 +89,7 @@ export default function Home() {
                     <Button
                         handle={() => {
                             ZServices.goTo(
-                                `/NYRU/#/${datas.tit_target}`
+                                `${paths.generic_base}${datas.tit_target}`
                             );
                         }}
                         text={
@@ -100,7 +101,7 @@ export default function Home() {
                     <Button
                         handle={() => {
                             ZServices.goTo(
-                                `/NYRU/#/${datas.abo_target}`
+                                `${paths.generic_base}${datas.abo_target}`
                             );
                         }}
                         text={
