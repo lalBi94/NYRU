@@ -23,6 +23,7 @@ const router = createHashRouter([
   { path: "/titlecard", element: <TitleCard/>},
   { path: "/about", element: <About/>},
   { path: "/contact", element: <Contact /> },
+  { path: "*", element: <Home /> }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
