@@ -3,7 +3,7 @@ import cursor from "./assets/footer-cursor.svg";
 import Button from "../Button/Button";
 import { useEffect, useState } from "react";
 import ZServices from "../../services/services";
-import paths from "../../services/data/paths.json"
+import paths from "../../services/data/paths.json";
 
 /**
  * Footer of this website.
@@ -29,7 +29,7 @@ export default function Footer() {
                     <Button
                         text="Contact"
                         handle={() => {
-                            ZServices.goTo(`${paths.generic_base}contact`);
+                            ZServices.goTo(`${paths.generic_base}#/contact`);
                         }}
                     />
                     <img
@@ -43,7 +43,7 @@ export default function Footer() {
             <div id="footer-bottom-section-container">
                 <span
                     onClick={() => {
-                        ZServices.goTo(`${paths.generic_base}vfx`);
+                        ZServices.goTo(`${paths.generic_base}#/vfx`);
                     }}
                     className="text-ft footer-bottom-section-link"
                 >
@@ -51,7 +51,7 @@ export default function Footer() {
                 </span>
                 <span
                     onClick={() => {
-                        ZServices.goTo(`${paths.generic_base}sfx`);
+                        ZServices.goTo(`${paths.generic_base}#/sfx`);
                     }}
                     className="text-ft footer-bottom-section-link"
                 >
@@ -59,7 +59,7 @@ export default function Footer() {
                 </span>
                 <span
                     onClick={() => {
-                        ZServices.goTo(`${paths.generic_base}gfx`);
+                        ZServices.goTo(`${paths.generic_base}#/gfx`);
                     }}
                     className="text-ft footer-bottom-section-link"
                 >
@@ -67,7 +67,7 @@ export default function Footer() {
                 </span>
                 <span
                     onClick={() => {
-                        ZServices.goTo(`${paths.generic_base}visuals`);
+                        ZServices.goTo(`${paths.generic_base}#/visuals`);
                     }}
                     className="text-ft footer-bottom-section-link"
                 >
@@ -75,7 +75,7 @@ export default function Footer() {
                 </span>
                 <span
                     onClick={() => {
-                        ZServices.goTo(`${paths.generic_base}titlecard`);
+                        ZServices.goTo(`${paths.generic_base}#/titlecard`);
                     }}
                     className="text-ft footer-bottom-section-link"
                 >
@@ -85,7 +85,7 @@ export default function Footer() {
                 </span>
                 <span
                     onClick={() => {
-                        ZServices.goTo(`${paths.generic_base}about`);
+                        ZServices.goTo(`${paths.generic_base}#/about`);
                     }}
                     className="text-ft footer-bottom-section-link"
                 >

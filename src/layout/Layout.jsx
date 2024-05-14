@@ -2,12 +2,12 @@ import Button from "../components/Button/Button";
 import "./Layout.scss";
 import { useState } from "react";
 import ZServices from "../services/services";
-import paths from "../services/data/paths.json"
+import paths from "../services/data/paths.json";
 
 /**
  * Page superposition showing the 3 buttons on top-right-side.
  * @param {object} props Page with properties.
- * @param {React.Element} props.children Page under this one. 
+ * @param {React.Element} props.children Page under this one.
  * @return {React.Element}
  */
 export default function Layout({ children }) {
@@ -15,7 +15,7 @@ export default function Layout({ children }) {
 
     /**
      * Switch language
-     * @param {string} lang New lang 
+     * @param {string} lang New lang
      * @return {void}
      */
     const set_lang = (lang) => {
@@ -32,13 +32,13 @@ export default function Layout({ children }) {
             <div id="layout-lang-container">
                 <Button
                     handle={() => {
-                        ZServices.goTo(paths.home)
+                        ZServices.goTo(`/#${paths.home}`);
                     }}
                     logo={
                         <div id="btn-div-spe">
                             <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
                             >
                                 {" "}
                                 <g>
