@@ -18,6 +18,10 @@
     "cartes-de-titre",
     "artiste"
   ],
+  "engines": {
+    "node": "20.9.0",
+    "npm": "10.1.0"
+  },
   "private": true,
   "version": "1.0.0",
   "type": "module",
